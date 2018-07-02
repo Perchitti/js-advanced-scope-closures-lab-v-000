@@ -16,4 +16,11 @@ function produceDrivingRange(blockRange) {
     return function (totalFare){
       return percentage * totalFare
     }
+
+
+  function createDriver(){
+    constructor(name){
+      this.id = ++driverId
+    this.name = name
+  }
   }
