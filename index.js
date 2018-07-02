@@ -1,11 +1,13 @@
-function produceDrivingRange {
-  return class {
-    constructor(range){
-    this.range = range
+function produceDrivingRange(blockRange) {
+  return function (start, end) {
+  let distance = parseInt(end) - parseInt(start)
+
+  if (blockRange > distance){
+    return `within range by ${blockRange - distance}`
+  }
+  else {
+    return `${distance - blockRange} blocks out of range`
+  }
   }
 
-  returnRange(blockRange){
-    return blockRange if this.range <= 10
   }
-  }
-}
