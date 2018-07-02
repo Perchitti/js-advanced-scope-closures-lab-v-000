@@ -16,6 +16,7 @@ function produceDrivingRange(blockRange) {
     return function (totalFare){
       return percentage * totalFare
     }
+  }
 
 
   function createDriver(){
