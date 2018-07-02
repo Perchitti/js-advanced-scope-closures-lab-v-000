@@ -19,9 +19,3 @@ function produceDrivingRange(blockRange) {
   }
 
 
-  function createDriver(){
-    constructor(name){
-      this.id = ++driverId
-    this.name = name
-  }
-  }
